@@ -1,0 +1,27 @@
+score = input("Enter Score: ")
+
+try:
+	a = float(score)
+except:
+    print('Please Enter Score Between 0 and 1')
+    quit()
+if a > 1:
+    print('Please Enter Score Between 0 and 1')
+    quit()
+elif a < 0 :
+    print('Please Enter Score Between 0 and 1')
+    quit()    
+elif a >= .9 :
+	print('A')
+elif a >= .8 :
+    print('B')
+elif a >= .7 :
+    print('C')
+elif a >= .6 :
+	print('D')
+elif a < .6 : 
+	print('F')
+    
+    
+    
+    
