@@ -1,0 +1,16 @@
+fhand = input('Enter file name: ')
+fh = open(fhand)
+count = 0
+add = 0
+for line in fh:
+    line = line.rstrip()
+    if not line.startswith('X-DSPAM-Confidence:'):
+        continue
+    else:
+        count = count + 1
+        index = line.find('0')
+        num = line[index:]
+        num = float(num)
+        add = add + num 
+
+print(num)
