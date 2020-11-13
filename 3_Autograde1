@@ -1,0 +1,18 @@
+hrs = input("Enter Hours:")
+wage = input("Enter Wage:")
+try:         
+	h = float(hrs)
+	w = float(wage)
+except:
+	print("Please Enter Nuemeric Value")
+   	quit()
+
+if h > 40:
+    ovt = (h - 40 ) * (w * .5)
+    reg = h * w
+    pay = ovt + reg
+    
+else:
+	pay = h * w
+print(pay)
+    	
